@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Info Card by Jeybi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header class="banner">
+    <p class="banner-small">Welcome to Jeybi's</p>
+    <h1>User Info Card</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="form-card">
+      <h2>Personal Information</h2>
+
+      <div class="field">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name">
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="field">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="field">
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday">
+      </div>
+
+      <div class="field">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter your address">
+      </div>
+
+      <div class="field">
+        <span class="label">Gender</span>
+        <label class="option"><input type="radio" name="gender" value="Male"> Male</label>
+        <label class="option"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="option"><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+      </div>
+
+      <div class="field">
+        <label for="course">Course</label>
+        <select id="course">
+          <option value="">Choose your course</option>
+          <option>BS Information Technology</option>
+          <option>BS Computer Science</option>
+          <option>BS Information Systems</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="favColor">Favorite Color</label>
+        <select id="favColor">
+          <option value="#2f6b3d">Green</option>
+          <option value="#2b5cb8">Blue</option>
+          <option value="#c0392b">Red</option>
+          <option value="#7d4bb0">Purple</option>
+          <option value="#d9822b">Orange</option>
+          <option value="#d6659a">Pink</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <span class="label">Hobbies</span>
+        <label class="option"><input type="checkbox" class="hobby" value="Gaming"> Gaming</label>
+        <label class="option"><input type="checkbox" class="hobby" value="Coding"> Coding</label>
+        <label class="option"><input type="checkbox" class="hobby" value="Music"> Music</label>
+        <label class="option"><input type="checkbox" class="hobby" value="Reading"> Reading</label>
+        <label class="option"><input type="checkbox" class="hobby" value="Sports"> Sports</label>
+      </div>
+
+      <div class="field">
+        <label for="about">About Me</label>
+        <textarea id="about" rows="3" placeholder="Tell us something about yourself"></textarea>
+      </div>
+
+      <button type="button" id="showBtn">Show My Info</button>
+    </section>
+
+    <aside id="resultCard" class="result-card">
+      <h2 id="resultTitle">Your Information</h2>
+      <p class="placeholder-text">Your submitted information will appear here.</p>
+      <div id="infoList" class="info-list"></div>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
